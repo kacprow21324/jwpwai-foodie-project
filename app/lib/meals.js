@@ -6,6 +6,7 @@ const db = sql(dbPath);
 
 export async function getMeals() {
     await new Promise((resolve) => setTimeout(resolve, 5000));
+    //throw new Error("Simulated database error");
     return db.prepare(`SELECT * FROM meals`).all(); 
 }
 
