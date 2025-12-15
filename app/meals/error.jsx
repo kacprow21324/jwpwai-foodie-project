@@ -1,6 +1,6 @@
 "use client";
-import classes from './page.module.css'
 import { useEffect } from 'react';
+import './../globals.css'
 
 export default function Error({error}) {
 
@@ -9,7 +9,7 @@ export default function Error({error}) {
     }, [error]);
 
     return (
-        <main className={classes.header}>
+        <main className="error">
             <h1>Oops! Something went wrong.</h1>
             <p> Error details: {error.message}</p>
         </main>
