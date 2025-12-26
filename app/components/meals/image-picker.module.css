@@ -1,0 +1,62 @@
+.picker {
+  margin-bottom: 1.5rem;
+}
+
+.picker label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #b3aea5;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.preview {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid #a4abb9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #a4abb9;
+  position: relative;
+  overflow: hidden;
+}
+
+.preview img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.input {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+}
+
+.button {
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  background: #a4abb9;
+  border-radius: 2px;
+  cursor: pointer;
+  font: inherit;
+  color: #1c2027;
+}
+
+.button:hover,
+.button:focus {
+  background: #b3aea5;
+}
